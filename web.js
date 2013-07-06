@@ -1,8 +1,8 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-
-var k = buf.toString(fs.readFileSync("index.html"));
+var fs = require('fs');
+var k = buffer.toString('utc 8', fs.readFileSync("index.html"));
 
 app.get('/', function(request, response) {
   response.send(k);
